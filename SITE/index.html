@@ -4,50 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header>
-        <div id="top-header">
-            <p>شرکت نرم افزاری ویرا سافت</p>
+    <!-- header -->
+    <header class="container">
+        <div class="row">
+            <div class="col-8">
+                <h1 id="title">ویرا سافت</h1>
+            </div>
+            <div class="col-4">
+                <img id="logo" src="img/logo-0.png" alt="">
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">صفحه اصلی</a></li>
-                <li><a href="#">ورود</a></li>
-                <li><a href="#">محصولات</a></li>
-                <li><a href="#">ارتباط با ما</a></li>
-            </ul>
-        </nav>
     </header>
-    <section id="main-content">bbb</section>
-    <footer>
-        <div id="linked">
-            <section>
-                <h2>لینک های مفید</h2>
-                <ul>
-                    <li><a href="www.sanjesh.org">sanjesh.org</a></li>
-                    <li><a href="www.hstalebi.ir">هنرستان شهید طالبی</a></li>
-                    <li><a href="www.google.com">gooogle</a></li>
-                    <li><a href="#">mofid</a></li>
-                </ul>
-            </section>
-            <section>
-                <h2>ارتباط با ما</h2>
-                <p>آدرس: نجف آباد، کف خیابان</p>
-                <p>ایمیل: vira.gmail.com</p>
-            </section>
-            <section>
-                <h2>دسترسی</h2>
-                <a href="#">صفحه اصلی</a> <br>
-                <a href="#">بالای صفحه</a>
-            </section>    
+    <!-- menu -->
+    <nav class="contaner-fluid">
+        <ul class="row">     
+            <li class="col-4"><a href="#">صفحه اصلی</a></li>
+            <li class="col-2"><a href="#">ورود</a></li>
+            <li class="col-3"><a href="#">ثبت نام</a></li>
+            <li class="col-3"><a href="#">درباره ما</a></li>           
+        </ul>
+    </nav>
+    <!-- main -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="maincontent">
+                    <!-- محتوای سایت -->
+                    <h1>شرکت نرم افزاری ویرا</h1>
+                    <h2>هدف:</h2>
+                    <p>این مجموعه افتخار دارد در جهت تسهیل و استفاده هرچه بیشتر اصناف مختلف از امکانات دیجیتالی روز دنیا تمام تلاش و امکانات خود را بکار برده است.</p>
+                    <h2>خدمات:</h2>
+                    <p>
+                        <ul>
+                            <li><span>آموزش و هدایت افراد توانمند و علاقه مند به دنیای دیجیتال</span></li>
+                            <li><span>تیم سازی و مدیریت فعال تیم های توسعه نرم افزار</span></li>
+                            <li><span>مشاوره و ارائه راه کارهای دیجیتال سازی سیستم ها</span></li>
+                            <li><span>تجزیه و تحلیل نرم افزاری سیستم مورد نیاز مشتری</span></li>
+                            <li><span>طراحی نرم افزار مورد نیاز سیستم مشتری</span></li>
+                            <li><span>پیاده سازی و ارائه نرم افزار مورد نیاز مشتری</span></li>
+                            <li><span>پشتیبانی از نرم افزار ارائه شده به مشتری</span></li>
+                        </ul>
+                    </p>
+                    <!-- محتوای سایت -->
+                </div>           
+            </div>
         </div>
-        <div id="footnote">
-            <p>
-                تمامی حقوق مادی و معنوی متعلق به شرکت ویرا سافت است
-            </p>
+    </div>
+    <!-- footer -->
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-6 col-sm-4">
+                <h3>لینک ها:</h3>
+                <p><a href="https:/www.sanjesh.org">سایت سنجش</a></p>
+                <p><a href="https:/www.medu.ir">سایت آموزش و پرورش</a></p>
+                <p><a href="https:/www.chap.ir">سایت چاپ کتاب</a></p>
+                <p><a href="https:/www.hstalebi.ir">سایت هنرستان</a></p>
+                <p><a href="https:/www.google.com">جستجو</a></p>
+            </div>
+            <div class="col">
+                <h3>آدرس:</h3>
+                <address>اصفهان، نجف آباد،</address>
+                <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1187.93625553707!2d51.366377306319166!3d32.63305973729839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfa!2s!4v1702289467807!5m2!1sfa!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
         </div>
-    </footer>
+        <div class="row">
+            <div id="footnote" class="col"><p>مالکیت مادی و معنوی سایت متعلق به شرکت نرم افزاری ویرا می باشد</p></div>
+        </div>
+    </footer>    
+
+
+    <script src="js/bootstrap.min.js"></script>   
 </body>
 </html>
